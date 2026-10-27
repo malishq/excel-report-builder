@@ -1,0 +1,21 @@
+columns:
+  date: ["Дата", "Дата заказа", "Дата продажи", "Дата документа", "date", "order_date"]
+  amount: ["Сумма", "Сумма, руб", "Сумма заказа", "Сумма продажи", "Выручка", "amount", "total", "sum"]
+  quantity: ["Количество", "Кол-во", "Кол-во, шт", "Количество, шт", "qty", "quantity"]
+  manager: ["Менеджер", "Продавец", "Ответственный", "manager", "seller"]
+  category: ["Категория", "Категория товара", "Группа товаров", "Группа", "category"]
+  region: ["Регион", "Область", "Город", "region", "city"]
+  client: ["Клиент", "Покупатель", "Контрагент", "client", "customer"]
+
+report:
+  title: "Отчёт по продажам"
+  currency: "₽"
+  top_n: 5
+
+cleaning:
+  drop_duplicates: true
+  drop_negative: false
+  date_formats: ["%d.%m.%Y", "%d.%m.%Y %H:%M", "%d.%m.%Y %H:%M:%S", "%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d/%m/%Y", "%d.%m.%y"]
+
+input:
+  sheet: 0
